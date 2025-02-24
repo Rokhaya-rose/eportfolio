@@ -1,8 +1,9 @@
+{% load static %}
 <!DOCTYPE html>
 <!--
     Anything you put in between the double-dash arrow symbols shown around
     this block of text is designated a 'comment' intended for human coders
-    and ignored by the computer. The top "<!DOCTYPE html>" line of code 
+    and ignored by the computer. The top "<!DOCTYPE html>" line of code
     declares that this text file is to be interpreted as HTML code.
 -->
 
@@ -10,7 +11,7 @@
 <!--
     This opening tag marks the start of the html code.  Everything below
     until the </html> closing tag is part of this element. "lang" is an
-    attribute defining the language of the website. The value "en" 
+    attribute defining the language of the website. The value "en"
     indicates this site is written in English. We indent the content
     inside an element to make it easier for people to read and understand.
 -->
@@ -25,25 +26,25 @@
 
         <meta name="author" content="Your Name">
         <!--
-            Some tags like "meta" are self-closing. They have "attributes" 
+            Some tags like "meta" are self-closing. They have "attributes"
             but no inner content and they don't need or use a closing tag.
         -->
 
         <title>Yourname's Screenprinting Project</title>
         <!--The 'title' is what's displayed in the browser tab.-->
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{% static 'core/style.css' %}">
         <!--
-            HTML (HyperText Markup Language) code is for the website 
-            content. CSS (Cascading Style Sheets) code is for the website 
-            style. The line above tells the browser the file location and 
+            HTML (HyperText Markup Language) code is for the website
+            content. CSS (Cascading Style Sheets) code is for the website
+            style. The line above tells the browser the file location and
             file name to find this code that you'll write/edit there.
         -->
 
     </head>
 
     <body> <!--Everything to be displayed in the browser window.-->
-        
+
         <h1>My screen printing process</h1>
 	<h2>By Rokhaya Mbaye</h2>
         <h2>  Introduction/overview</h2>
@@ -53,41 +54,41 @@
 	<p>I wanted to do my words in french, so I chose a meaningful phrase to me. The phrase I chose was never give up. In french that is “ne jamais abandonner”. At first I was going to do it in Arabic, but seeing that I was closer to French, I went with it. After coming up with what I wanted it to say, I then chose what gesture I wanted. I went with a hand heart.</p>
        <h2>Photographing</h2>
        <p>After we had the baseline for our print, we went ahead and took photos of our gestures. We learned how to make the background blurry or focused and how to work the camera to get our desired image. I used a medium depth of field, f11, and a low brightness to achieve my photo.  My teammates and I took turns taking photos of each other for our designs.</p>
-	<img src="Photooforiginaldesign.JPG">
+	<img src="{% static 'core/Photooforiginaldesign.JPG' %}">
 	<h2>My digital process</h2>
 	<p>One of the first things we did was learn how to use Adobe Photoshop to make and import the ideas for our projects. We learned how to use the tools that we would be using to make our print and played around with it for a few. Some of these tools include the paintbrushes, the magic tool, the layers, and the color sampler to name a few. After we got used to the app, we went ahead and uploaded our photos onto there. After that we edited it using what we learned to get the result we wanted.</p>
-	<img src="photoshopresult.png">
+	<img src="{% static 'core/photoshopresult.png' %}">
 	<h2> Transferring to Adobe Illustrator</h2>
 	<p>After we got the photo edited, we uploaded it onto Adobe Illustrator to add the dimensions for the frames and the photo itself.</p>
-	<img src="Illustrator.png">
+	<img src="{% static 'core/Illustrator.png' %}">
 	<h2>Making the frames</h2>
 	<p>After we were done tech wise, we moved on to making the frames for the photo. I made my frame 10” by 9”.  We learned how to use the power saw and mark our woods. I cut it up and assembled it using wood glue and staples(which can be seen below). We let them set and waited for the glue to bond the wood.</p>
-	<img src="staplingmywood.JPG">
+	<img src="{% static 'core/staplingmywood.JPG' %}">
 	<h2>Adding the screen</h2>
 	<p>After the frame was done drying, we measured and cut the screen mesh and stretched and stapled onto the frame. We had to make sure that it was super tight, that way there wouldn't be any problems when transferring the photo onto it. I had help from my friend. I pulled and stretched the mesh and she stapled it for me. After that I was done.</p>
 	<h2>Printing and melting the picture</h2>
 	<p>After the mesh was on, the next step was to print my design and melt it into the mesh. We used vinyl material to do this. First we uploaded my png file onto and I was able to hook it up onto the printing machine. I cut out my vinyl and glued it onto a plastic board and put that into the machine. Then it printed. After I got my print, I peeled out my design carefully and glued it into my frame using a mini iron. Then I taped the inside and made sure it  was secure so that no paint goes through.</p>
-	<img src="rokhayamakingprint.JPG">
+	<img src="{% static 'core/rokhayamakingprint.JPG' %}">
 	<h2>Painting</h2>
 	<p>My original plane was black paint, but I really loved the light blue paint that I ended up making so I went with that. I set it up using a silver hook and clamp so that I could lift up my frame and remove or put anything in. I first started on paper and made 5 prints but they did not turn out right. So the next day I tried and after many failed attempts, I finally somewhat did it. Then I moved on and printed onto a dark blue fabric and box. The images below are the ones that turned out well.</p>
-	<img src="photoofprintonfabric.JPG">
-	<img src="Photoofprintonpapaper.JPG">
-	<img src="photoofprintonbox.JPG">
+	<img src="{% static 'core/photoofprintonfabric.JPG' %}">
+	<img src="{% static 'core/Photoofprintonpapaper.JPG' %}">
+	<img src="{% static 'core/photoofprintonbox.JPG' %}">
 	<h2> 21st century skills</h2>
 	<p>I used communication and collaboration skills the most. I was able to communicate effectively and work productively with my classmates. An example of this is when they helped me with the painting and I helped them with the frames. We also exchanged ideas for our design in the beginning. When helping them with the frames, I took my time and made sure that they understood what I was showing them. The information was clearly communicated and I knew this because they did it correctly. Everyone in my group worked equally. We all pitched in and helped each other. One challenge we faced working together was that at times it was frustrating when one person didn’t take the photo’s the way you wanted. But we overcame it by talking and figuring out what was the best way for each person. Had I done this project alone, I would probably have not done as well as I have because it takes more than one person to successfully succeed with the project.</p>
 	<h2>Reflection</h2>
 	<p>Overall this process was really fun and engaging. I was able to learn valuable skills like using adobe photoshop and using a camera. I was really good at making the frames. With this strength I was able to help my classmates with theirs. The painting process was a bit challenging but I got it in the end. We helped each other together. They showed me effective ways to get the print to come out nicely. I would like to use my photoshopping skills later in an art class or just for personal usage. This project was really engaging and it put my knowledge to the test. I was able to learn some fundamental skills that I will be able to use in the future.</p>
- 
 
 
 
-	
+
+
 
 
 
 
 
         <p></p>
-        
+
     </body>
 </html>

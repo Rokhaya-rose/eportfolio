@@ -9,5 +9,8 @@ def hellotime(request):
 def screenprint(request):
     return render(request, "core/screenprint.html")
 
+def blackbox(request):
+    return render(request, "core/blackbox.html")
+
 
 # TODO: add anoher view for the blackbox page
